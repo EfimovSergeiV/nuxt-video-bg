@@ -1,4 +1,4 @@
-# y
+# nuxt-video-bg
 
 ## Build Setup
 

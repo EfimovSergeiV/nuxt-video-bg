@@ -34,5 +34,9 @@ export default Vue.extend({
 .card-rounded {
   background-color: #ffffffad;
   border-radius: 3px;
+  transition: 1s;
+}
+.card-rounded:hover {
+  background-color: #ffffffe0;
 }
 </style>

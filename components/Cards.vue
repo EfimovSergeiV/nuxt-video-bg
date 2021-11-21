@@ -1,6 +1,6 @@
 <template>
   <b-row>
-    <b-col v-for="i in 6" :key="i" cols="6">
+    <b-col v-for="i in 4" :key="i" cols="12" lg="6">
       <Card :card="cards" />
     </b-col>
   </b-row>

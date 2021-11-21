@@ -1,8 +1,10 @@
 <template>
   <div class="app">
-    <video src="../assets/files/bg-video.mp4" muted loop autoplay></video>
+    <video src="../assets/files/two-bg-video.mp4" muted loop autoplay></video>
     <div class="content">
-      <Nuxt />
+      <transition name="fade" mode="out-in">
+        <Nuxt />
+      </transition>
     </div>
   </div>
 </template>

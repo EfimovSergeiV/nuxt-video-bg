@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Play-Regular;
+  src: url("../fonts/Play/Play-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Play-Bold;
+  src: url("../fonts/Play/Play-Bold.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+html,
+body {
+  position: relative;
+  font-family: Play-Regular, Arial, sans-serif !important;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 16px;
+  color: #1a1a1a;
+  background-color: #222222be !important;
+  height: 100%;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+  font-size: 16px;
+  color: #dbdbdb;
+  transition: 0.8s;
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #ff0000;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul.inline {
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+}
+
+ ul.inline li {
+  display: inline;
+  margin-right: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+
+.footer__i-size {
+  font-size: 25px;
+}

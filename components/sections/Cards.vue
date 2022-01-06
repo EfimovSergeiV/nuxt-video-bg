@@ -1,21 +1,21 @@
 <template>
   <b-row>
-    <b-col v-for="i in 4" :key="i" cols="12" lg="6">
-      <Card :card="cards" />
+    <b-col class="p-2" v-for="like in likes" :key="like.id" cols="12" lg="6">
+      <Card class="h-100 p-2" :card="like" />
     </b-col>
   </b-row>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Card from './sections/Card.vue'
+import Card from '../Card.vue'
 
 export default Vue.extend({
   components: {
     Card,
   },
   props: {
-    cards: {
+    likes: {
       type: Object,
       default: Object,
     }

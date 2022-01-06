@@ -6,12 +6,12 @@
             <div class="main__content">
               <b-row>
                 <b-col cols="12">
-                  <h1>{{ title }}</h1>
+                  <h2>{{ main.title }}</h2>
                 </b-col>
               </b-row>
               <b-row>
                 <b-col cols="12">
-                  <p>{{ desc }}</p>
+                  <p v-html="main.desc"></p>
                 </b-col>
               </b-row>
             </div>
@@ -24,9 +24,9 @@
         <b-row class="pb-1 text-center">
           <b-col cols="12">
             <ul class="inline">
-              <li><b-btn size="sm" variant="outline-light">ГЛАВНАЯ</b-btn></li>
-              <li><b-btn size="sm" variant="outline-light">ПРОЕКТЫ</b-btn></li>
-              <li><b-btn size="sm" variant="outline-light">КОНТАКТЫ</b-btn></li>
+              <li class="p-2"><nuxt-link to="/">ГЛАВНАЯ</nuxt-link></li>
+              <li class="p-2"><nuxt-link to="p">ПРОЕКТЫ</nuxt-link></li>
+              <li class="p-2"><nuxt-link to="about">КОНТАКТЫ</nuxt-link></li>
             </ul>
           </b-col>
         </b-row>  
@@ -38,9 +38,13 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data: () => ({
-    title: "Lorem ipsum dolor sit amet",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  }),
+  props: {
+    main: {
+      type: Object,
+      default: { 
+        title: 's2NNAUF PROJECT`s', 
+        desc: "Разработка реактивных веб приложений на NuxtJS + Django </br> #Python #JS #TS #GO #GNU/Linux"}
+    },
+  },
 })
 </script>

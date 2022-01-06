@@ -9,7 +9,7 @@
         </b-row>
         <b-row>
           <b-col cols="12">
-            <h6>{{ card.desc }}</h6>
+            <h6 v-html="card.desc"></h6>
           </b-col>
         </b-row>
       </b-col>

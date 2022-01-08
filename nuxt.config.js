@@ -1,7 +1,14 @@
+import pkg from './package.json'
+
 export default {
+  // Check updates
+  publicRuntimeConfig: {
+    clientVersion: pkg.version,
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 's2NNAUF - HomePage',
+    title: 's2NNAUF PROJECT`s',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -42,8 +49,15 @@ export default {
     '@nuxtjs/pwa',
   ],
 
+  bootstrapVue: {
+    bootstrapCSS: false, // Or `css: false`
+    bootstrapVueCSS: false // Or `bvCSS: false`
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'https://api.glsvar.ru',
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

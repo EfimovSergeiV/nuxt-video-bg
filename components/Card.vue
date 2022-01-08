@@ -1,6 +1,6 @@
 <template>
-  <div class="card-rounded">
-    <b-row class="mt-2 mb-2 p-2">
+  <div class="card__background p-2">
+    <b-row>
       <b-col cols="12">
         <b-row>
           <b-col cols="12">
@@ -31,12 +31,12 @@ export default Vue.extend({
 </script>
 
 <style>
-.card-rounded {
+/* .card-rounded {
   background-color: #ffffffad;
   border-radius: 3px;
   transition: 1s;
 }
 .card-rounded:hover {
   background-color: #ffffffe0;
-}
+} */
 </style>

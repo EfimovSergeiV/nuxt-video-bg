@@ -1,3 +1,6 @@
+@import './_variables.scss';
+
+
 @font-face {
   font-family: Play-Regular;
   src: url("../fonts/Play/Play-Regular.ttf");
@@ -41,47 +44,47 @@ body {
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-  background-color: #843465;
+  background-color: #253861;
   border-radius: 9em;
   box-shadow: inset 1px 1px 10px #0300be;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #253861;
+  background-color: #192541;
 }
 
 /* Стрелки */
 
-::-webkit-scrollbar-button:vertical:start:decrement {
-  // background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-  // linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-  // linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #000000;
-}
+// ::-webkit-scrollbar-button:vertical:start:decrement {
+//   // background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+//   // linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+//   // linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+//   background-color: #000000;
+// }
 
-::-webkit-scrollbar-button:vertical:end:increment {
-  // background:
-  //     linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-  //     linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-  //     linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #000000;
-}
+// ::-webkit-scrollbar-button:vertical:end:increment {
+//   // background:
+//   //     linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+//   //     linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+//   //     linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+//   background-color: #000000;
+// }
 
-::-webkit-scrollbar-button:horizontal:start:decrement {
-  // background:
-  //     linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-  //     linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-  //     linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #000000;
-}
+// ::-webkit-scrollbar-button:horizontal:start:decrement {
+//   // background:
+//   //     linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+//   //     linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+//   //     linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+//   background-color: #000000;
+// }
 
-::-webkit-scrollbar-button:horizontal:end:increment {
-  // background:
-  //     linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-  //     linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-  //     linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #000000;
-}
+// ::-webkit-scrollbar-button:horizontal:end:increment {
+//   // background:
+//   //     linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+//   //     linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+//   //     linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+//   background-color: #000000;
+// }
 
 *,
 *::before,
@@ -119,6 +122,7 @@ ul.inline {
   list-style-type: none;
 }
 
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
@@ -128,32 +132,39 @@ ul.inline {
   opacity: 0;
 }
 
-
 .footer__i-size {
   font-size: 25px;
 }
 
-// HEADER
 
+// HEADER
 .header__background {
   background-color: #000000ad;
 }
 
 
 // FOOTER
-
 .footer__background {
   background-color: #000000de;
   margin-top: 4vh;
 }
 .footer__content {
-  padding-top: 8vw;
-  padding-bottom: 8vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+
+// CARD STYLES
+.card__background {
+  background-color: #dbdbdbcc;
+  border-radius: 3px;
+  &:hover {
+    background-color: #dbdbdb;
+  }
 }
 
 
 // MAIN STYLES
-
 .main {
   background-color: #000000ad;
   color: #dadada;
@@ -162,3 +173,27 @@ ul.inline {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+
+// Toasts
+
+// scss-docs-start toast-variables
+// $toast-max-width:                   300px !default;
+// $toast-padding-x:                   .75rem !default;
+// $toast-padding-y:                   .5rem !default;
+// $toast-font-size:                   .875rem !default;
+// $toast-color:                       null !default;
+// $toast-background-color:            rgba($white, .85) !default;
+// $toast-border-width:                1px !default;
+// $toast-border-color:                rgba($black, .1) !default;
+// $toast-border-radius:               $border-radius !default;
+// $toast-box-shadow:                  $box-shadow !default;
+// $toast-spacing:                     $container-padding-x !default;
+
+// $toast-header-color:                $gray-600 !default;
+// $toast-header-background-color:     rgba($white, .85) !default;
+// $toast-header-border-color:         rgba($black, .05) !default;
+// scss-docs-end toast-variables
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';

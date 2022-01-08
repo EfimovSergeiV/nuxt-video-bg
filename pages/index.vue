@@ -3,23 +3,17 @@
     <Header />
     <Main />
 
-    <b-container fluid class="mt-4 mb-4">
-      <b-row>
-        <b-col>
-          <div class="card-rounded">
-            STyle WTF! 
-          </div>
-        </b-col>
-      </b-row>
+    <b-container class="text-light">
+      <About />
     </b-container>
 
 
-    <b-container class="mt-4">
-      <b-row>
+    <b-container>
+      <!-- <b-row>
         <b-col class="text-center" cols="12">
           <h1 class="text-light">МОЙ СТЕК</h1>
         </b-col>
-      </b-row>
+      </b-row> -->
       
       <Cards :likes='likes' /> 
     </b-container>
@@ -32,6 +26,7 @@
 import Vue from 'vue'
 import Header from '@/components/Header.vue'
 import Main from '@/components/Main.vue'
+import About from '@/components/sections/About.vue'
 import Cards from '@/components/sections/Cards.vue'
 import Footer from '@/components/Footer.vue'
 
@@ -39,6 +34,7 @@ export default Vue.extend({
   components: {
     Header,
     Main,
+    About,
     Cards,
     Footer,
   },

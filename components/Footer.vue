@@ -21,7 +21,7 @@
         </b-col>
         <b-col cols="12">
           <small class="text-light">s2nullnullachtundfunfzig/2022 (c) Этот проект живёт на
-            <a href="https://github.com/EfimovSergeiV">GitHub</a>
+            <a href="https://github.com/EfimovSergeiV" target="blank">GitHub</a>
           </small>
         </b-col>
       </b-row>

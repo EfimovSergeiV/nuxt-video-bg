@@ -2,7 +2,7 @@
   <div id="social-network">
     <ul class="inline">
       <li class="p-1" v-for="social in socialnetwrks" :key="social.id">
-        <nuxt-link :to="social.link" target="blank" class="mdi footer__i-size" :class="social.icon"></nuxt-link>
+        <a :href="social.link" target="blank" class="mdi footer__i-size" :class="social.icon"></a>
       </li>
     </ul>
   </div>
@@ -16,12 +16,12 @@ export default Vue.extend({
     socialnetwrks: {
       type: Object,
       default: [
-        { link: '#', icon: 'mdi-github'},
-        { link: '#', icon: 'mdi-facebook'},
+        { link: 'https://github.com/EfimovSergeiV/', icon: 'mdi-github'},
+        { link: 'https://www.facebook.com/s2nnauf/', icon: 'mdi-facebook'},
         { link: '#', icon: 'mdi-linkedin'},
-        { link: '#', icon: 'mdi-reddit'},
-        { link: '#', icon: 'mdi-twitter'},
-        { link: '#', icon: 'mdi-gmail'},
+        { link: 'https://www.reddit.com/user/EfimovSergeiV', icon: 'mdi-reddit'},
+        { link: 'https://twitter.com/efimovsergeiv/', icon: 'mdi-twitter'},
+        { link: 'mailto:efimovsergeiv@gmail.com', icon: 'mdi-gmail'},
       ],
     }
   }

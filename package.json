@@ -1,6 +1,6 @@
 {
-  "name": "y",
-  "version": "1.0.0",
+  "name": "s2nnauf",
+  "version": "3.2.3",
   "private": true,
   "scripts": {
     "dev": "nuxt",

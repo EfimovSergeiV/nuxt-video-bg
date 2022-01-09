@@ -72,7 +72,11 @@ export default Vue.extend({
       }
     },
     showToastUpdate() {
-      this.$bvToast.show('app-update')
+      // this.$bvToast.show('app-update')
+        // this.$bvToast.toast(`This is toast number`, {
+        //   title: 'BootstrapVue Toast',
+        //   autoHideDelay: 5000,
+        // })
     },
   }
 })
